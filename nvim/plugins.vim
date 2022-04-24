@@ -11,6 +11,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'OmniSharp/omnisharp-vim'
     Plug 'RRethy/vim-illuminate'
     Plug 'SirVer/ultisnips'
+    Plug 'honza/vim-snippets'
     Plug 'dense-analysis/ale'
     Plug 'itchyny/lightline.vim'
     Plug 'mattn/emmet-vim'
@@ -24,6 +25,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-commentary'
     Plug 'tpope/vim-surround'
     Plug 'wellle/targets.vim'
+    Plug 'lervag/vimtex'
 call plug#end()
 
 " Coc-nvim
@@ -75,8 +77,8 @@ let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 " vim-Startify https://www.chrisatmachine.com/Neovim/11-startify/
 let g:startify_session_dir = '~/.config/nvim/session'
 let g:startify_lists = [
-          \ { 'type': 'files',     'header': ['   Files']            },
           \ { 'type': 'dir',       'header': ['   Current Directory '. getcwd()] },
+          \ { 'type': 'files',     'header': ['   Files']            },
           \ { 'type': 'sessions',  'header': ['   Sessions']       },
           \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
           \ ]
@@ -88,14 +90,16 @@ let g:startify_bookmarks = [
             \ '~/Desktop/Projects',
             \ '~/Desktop/UK/MFF-Stuff',
             \ ]
-" let g:startify_session_autoload = 1
-" let g:startify_session_persistence = 1
 let g:startify_enable_special = 0
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | Startify | endif
 
-" nvim-colorizer - https://github.com/norcalli/nvim-colorizer.lua
-" in init
-"
+" Latex
+let g:tex_flavor='latex'
+" let g:vimtex_view_general_viewer='acrordrdc'
+let g:vimtex_view_general_viewer='evince'
+let g:vimtex_quickfix_mode=0
+set conceallevel=1
+let g:tex_conceal='abdmg'
 
 " Omnisharp
 " let g:OmniSharp_server_use_mono = 1
@@ -136,7 +140,7 @@ augroup omnisharp_commands
 augroup END
 
 let g:ale_linters = { 'cs': ['OmniSharp'] }
-" let g:ale_linters_explicit = 1
+let g:ale_linters_explicit = 1
 
 let g:startify_custom_header = [
 \ '',

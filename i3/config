@@ -3,9 +3,11 @@
 # This config file will use environment variables such as $BROWSER and $TERMINAL.
 
 exec_always --no-startup-id picom
+exec_always --no-startup-id unclutter -idle 3
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id autotiling
-exec_always --no-startup-id feh --bg-fill --randomize ~/Pictures/Wallpapers/
+exec_always --no-startup-id feh --bg-fill $(shuf -n 1 -e ~/Pictures/Wallpapers/Horizontal/*) --bg-fill $(shuf -n 1 -e ~/Pictures/Wallpapers/Vertical/*) 
+
 exec_always --no-startup-id setxkbmap -layout cz,us -option grp:alt_shift_toggle
 exec_always --no-startup-id i3-battery
 exec_always --no-startup-id udiskie
@@ -121,7 +123,7 @@ bindsym $mod+x		              exec --no-startup-id $shutdown
 # bindsym $mod+v			            exec --no-startup-id mpv /dev/video0
 
 # # b
-bindsym $mod+b			          exec --no-startup-id feh --bg-fill --randomize ~/Pictures/Wallpapers/
+bindsym $mod+b                    exec --no-startup-id feh --bg-fill $(shuf -n 1 -e ~/Pictures/Wallpapers/Horizontal/*) --bg-fill $(shuf -n 1 -e ~/Pictures/Wallpapers/Vertical/*) 
 
 # # n
 # bindsym $mod+n			            exec --no-startup-id kill -s USR1 $(pidof deadd-notification-center)
@@ -130,8 +132,8 @@ bindsym $mod+n		              exec chromium
 # m
 bindsym $mod+m		              exec --no-startup-id spotify
 
-# f
-bindsym $mod+o			          exec --no-startup-id nautilus 
+# o
+bindsym $mod+o			          exec --no-startup-id nautilus
 
 # #---Workspace Bindings---# #
 bindsym $mod+Tab		          exec --no-startup-id rofi-menu-windows
@@ -152,10 +154,17 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
+# Brightness
+bindcode 232 exec --no-startup-id sudo brightnessctl set 5%-
+bindcode 233 exec --no-startup-id sudo brightnessctl set +5%
+
+# Multiple screens
+bindcode 133                    exec --no-startup-id $HOME/.config/monitors/twoScreens.sh
+bindcode 199                    exec --no-startup-id $HOME/.config/monitors/default.sh
+
 # Assign Workspaces:
 for_window [class="Chromium"]   move to workspace $ws10
 for_window [class="Spotify"]    move to workspace $ws9
-
 
 # Assing autofloat
 for_window [title=".*Emulator.*"] floating enable
@@ -189,10 +198,9 @@ for_window [class="Gimp"] move workspace $ws5
 for_window [window_role="GtkFileChooserDialog"] resize set 800 600
 for_window [window_role="GtkFileChooserDialog"] move position center
 
-
 # #---Function Buttons---# #
 bindsym $mod+F1		        restart
-# bindsym $mod+F2		        $suspend
+# bindsym $mod+F2		    $suspend
 bindsym $mod+F12	        exec $term -e nmtui
 bindsym $mod+F11            $hibernate
 

@@ -34,7 +34,8 @@ set nobackup
 set nowritebackup
 set updatetime=300
 set shortmess+=c
-" useful: coc-omnisharp, coc-pyright, coc-pairs
+" useful: coc-pairs, coc-pyright, coc-vimtex, coc-json
+" for c# -> use csharp-ls -> need coc config setup
 
 " set signcolumn=yes
 inoremap <silent><expr> <NUL> coc#refresh()

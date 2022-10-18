@@ -85,4 +85,4 @@ key_bindings:
   - { key: Key0, mods: Control, action: ResetFontSize }
   - { key: Equals, mods: Control, action: IncreaseFontSize }
   - { key: Minus, mods: Control, action: DecreaseFontSize }
-  - { key: T, mods: Control, action: SpawnNewInstance }
+  # - { key: T, mods: Control, action: SpawnNewInstance }

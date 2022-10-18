@@ -26,7 +26,15 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-surround'
     Plug 'wellle/targets.vim'
     Plug 'lervag/vimtex'
+
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 call plug#end()
+
+" commentary
+autocmd BufNewFile,BufRead *.map set ft=map syntax=vim
+autocmd FileType map setlocal commentstring=#%s 
 
 " Coc-nvim
 set hidden
@@ -38,10 +46,7 @@ set shortmess+=c
 " for c# -> use csharp-ls -> need coc config setup
 
 " set signcolumn=yes
-inoremap <silent><expr> <NUL> coc#refresh()
-inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-inoremap <expr> <C-l> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+" autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 
 " NERDTree
@@ -155,16 +160,3 @@ let g:startify_custom_header = [
 \ '           _\/\\\___\//\\\\\___\//\\\\\\\\\\___\///\\\\\/_______\//\\\______\/\\\__\/\\\__\/\\\__\/\\\_ ',
 \ '            _\///_____\/////_____\//////////______\/////__________\///_______\///___\///___\///___\///__',
 \ '']
-
-" \ '     ___      ___                                                   ',
-" \ '     `MM\     `M"                               68b                 ',
-" \ '      MMM\     M                                Y89                 ',
-" \ '      M\MM\    M   ____     _____   ____    ___ ___ ___  __    __   ',
-" \ '      M \MM\   M  6MMMMb   6MMMMMb  `MM(    )M" `MM `MM 6MMb  6MMb  ',
-" \ '      M  \MM\  M 6M"  `Mb 6M"   `Mb  `Mb    d"   MM  MM69 `MM69 `Mb ',
-" \ '      M   \MM\ M MM    MM MM     MM   YM.  ,P    MM  MM"   MM"   MM ',
-" \ '      M    \MM\M MMMMMMMM MM     MM    MM  M     MM  MM    MM    MM ',
-" \ '      M     \MMM MM       MM     MM    `Mbd"     MM  MM    MM    MM ',
-" \ '      M      \MM YM    d9 YM.   ,M9     YMP      MM  MM    MM    MM ',
-" \ '     _M_      \M  YMMMM9   YMMMMM9       M      _MM__MM_  _MM_  _MM_',
-" \ '']

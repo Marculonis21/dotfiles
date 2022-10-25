@@ -27,21 +27,22 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'wellle/targets.vim'
     Plug 'lervag/vimtex'
 
+    Plug 'godlygeek/tabular'
+    Plug 'plasticboy/vim-markdown'
+    Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }}
+
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 call plug#end()
 
+" do not close the preview tab when switching to other buffers
+let g:mkdp_auto_close = 0
+
 " commentary
 autocmd BufNewFile,BufRead *.map set ft=map syntax=vim
 autocmd FileType map setlocal commentstring=#%s 
 
-" Coc-nvim
-set hidden
-set nobackup
-set nowritebackup
-set updatetime=300
-set shortmess+=c
 " useful: coc-pairs, coc-pyright, coc-vimtex, coc-json
 " for c# -> use csharp-ls -> need coc config setup
 
@@ -147,6 +148,22 @@ augroup END
 
 let g:ale_linters = { 'cs': ['OmniSharp'] }
 let g:ale_linters_explicit = 1
+
+" vim markdown
+" disable header folding
+let g:vim_markdown_folding_disabled = 1
+" do not use conceal feature, the implementation is not so good
+let g:vim_markdown_conceal = 0
+" disable math tex conceal feature
+let g:tex_conceal = ""
+let g:vim_markdown_math = 1
+" support front matter of various format
+let g:vim_markdown_frontmatter = 1  " for YAML format
+let g:vim_markdown_toml_frontmatter = 1  " for TOML format
+let g:vim_markdown_json_frontmatter = 1  " for JSON format
+
+" markdown preview
+let g:mkdp_theme = 'dark'
 
 let g:startify_custom_header = [
 \ '',

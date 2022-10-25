@@ -1,6 +1,7 @@
 let g:mapleader=","
 
-syntax enable                           " Enables syntax highlighing
+syntax enable
+
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
 set number
@@ -29,6 +30,7 @@ set smartcase
 " set noshowmode                          " We don't need to see things like -- INSERT -- anymore
 set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
+set shortmess+=c
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 
 " Mouse and backspace

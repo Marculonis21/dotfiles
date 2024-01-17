@@ -46,6 +46,7 @@ autocmd FileType map setlocal commentstring=#%s
 " useful: coc-pairs, coc-pyright, coc-vimtex, coc-json
 " for c# -> use csharp-ls -> need coc config setup
 
+
 " set signcolumn=yes
 " autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif

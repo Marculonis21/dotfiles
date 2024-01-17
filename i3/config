@@ -2,35 +2,46 @@
 
 # This config file will use environment variables such as $BROWSER and $TERMINAL.
 
-exec_always --no-startup-id picom
+exec_always --no-startup-id picom --vsync
 exec_always --no-startup-id unclutter -idle 3
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id autotiling
 exec_always --no-startup-id feh --bg-fill $(shuf -n 1 -e ~/Pictures/Wallpapers/Horizontal/*) --bg-fill $(shuf -n 1 -e ~/Pictures/Wallpapers/Vertical/*) 
 
 exec_always --no-startup-id setxkbmap -layout cz,us -option grp:alt_shift_toggle
-exec_always --no-startup-id i3-battery
+exec_always --no-startup-id i3-battery-popup -n -D -L 30 
 exec_always --no-startup-id udiskie
+
+exec --no-startup-id xset s off
+exec --no-startup-id xset -dpms
+exec --no-startup-id xset s noblank
 
 #---Basic Definitions---# #
 smart_gaps on
 smart_borders on
 set $inner_gaps 15
 set $outer_gaps 20
+set $border_pixels 2
 set $term --no-startup-id alacritty
 set $mod Mod4
 set $alt Mod1
 set $shutdown shutdown -h now
 set $reboot reboot
-set $lock i3lock
-set $suspend systemctl suspend
+set $lock --no-startup-id i3lock -i ~/Pictures/Wallpapers/Horizontal/liftoff2.png
+set $suspend --no-startup-id systemctl suspend
+set $suspend_lock --no-startup-id systemctl suspend && i3lock -i ~/Pictures/Wallpapers/Horizontal/liftoff2.png
 set $hibernate sudo systemctl hibernate
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# custom floating rules
+for_window [class="Pathtracer test"] floating enable, move position center
+for_window [class ="SFML*"] floating enable, move position center
+for_window [class ="mujoco"] floating enable, move position center
+
 # #---Gaps---# #
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel $border_pixels
 gaps inner $inner_gaps
 gaps outer $outer_gaps
 
@@ -43,7 +54,7 @@ gaps outer $outer_gaps
 bindsym $mod+Return 		      exec $term
 bindsym $mod+Shift+Return	      exec $term --working-directory  $(xcwd)
 
-bindsym $mod+Shift+Escape	      exec --no-startup-id $hibernate
+bindsym $mod+Shift+Escape	      exec $hibernate
 
 # space
 # bindsym $mod+space 			  exec --no-startup-id rofi-menu 
@@ -53,7 +64,7 @@ bindsym $mod+q			          [con_id="__focused__" instance="^(?!dropdown_).*$"] k
 bindsym $mod+Shift+q		      [con_id="__focused__" instance="^(?!dropdown_).*$"] exec --no-startup-id kill -9 `xdotool getwindowfocus getwindowpid`
 
 # s suspend
-bindsym $mod+Shift+s	          exec --no-startup-id $suspend
+bindsym $mod+Shift+s	          exec $suspend_lock
 
 # c
 # bindsym $mod+c 			      exec --no-startup-id lock
@@ -69,7 +80,8 @@ bindsym $mod+r 			          exec $term -e ranger
 # # y
 # bindsym $mod+y			      exec --no-startup-id flameshot gui -p ~/Pics/screenshots
 # bindsym $mod+Shift+y		      exec --no-startup-id flameshot full -p ~/Pics/screenshots
-bindsym $mod+y			      exec --no-startup-id gnome-screenshot 
+bindsym $mod+y			          exec --no-startup-id gnome-screenshot 
+bindsym $mod+Shift+y			  exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/marculonis/Pictures/screenshot $(date)"
 
 # # u
 bindsym $mod+u                    exec --no-startup-id udiskie-umount --detach /media/marculonis/My\ Passport
@@ -159,8 +171,8 @@ bindcode 232 exec --no-startup-id sudo brightnessctl set 5%-
 bindcode 233 exec --no-startup-id sudo brightnessctl set +5%
 
 # Multiple screens
-bindcode 133                    exec --no-startup-id $HOME/.config/monitors/twoScreens.sh
-bindcode 199                    exec --no-startup-id $HOME/.config/monitors/default.sh
+bindcode $mod+75 exec --no-startup-id $HOME/.screenlayout/default.sh
+bindcode $mod+76 exec --no-startup-id $HOME/.screenlayout/hh.sh
 
 # Assign Workspaces:
 for_window [class="Chromium"]   move to workspace $ws10
@@ -212,9 +224,8 @@ for_window [window_role="GtkFileChooserDialog"] move position center
 
 # #---Function Buttons---# #
 bindsym $mod+F1		        restart
-# bindsym $mod+F2		    $suspend
 bindsym $mod+F12	        exec $term -e nmtui
-bindsym $mod+F11            $hibernate
+bindsym $mod+F11            exec $lock
 
 # #---Arrow Keys---# #
 bindsym $mod+Left		    focus left

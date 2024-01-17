@@ -1,5 +1,12 @@
 let g:mapleader=","
 
+" spelling
+" set spelllang=cs
+" set spell
+
+" syntax on
+" set fileencodings=utf-8,latin2
+
 syntax enable
 
 set hidden                              " Required to keep multiple buffers open multiple buffers
@@ -49,6 +56,21 @@ set colorcolumn=80
 highlight ColorColumn ctermbg=233
 
 set termguicolors
+
+augroup filetype_tex
+    autocmd!
+    autocmd FileType tex setlocal spell
+    autocmd FileType tex setlocal spelllang=cs
+    highlight clear SpellBad
+    highlight clear SpellCap
+    highlight clear SpellLocal
+    highlight clear SpellRare
+
+    highlight link SpellBad WarningMsg
+    highlight link SpellCap ModeMsg
+    highlight link SpellLocal ModeMsg
+    highlight link SpellRare Question
+augroup end
 
 " au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 autocmd! bufwritepost $MYVIMRC source %

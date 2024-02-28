@@ -17,10 +17,13 @@ alias cscompile="dotnet msbuild"
 alias monogameCompile="dotnet publish -c Debug -r linux-x64 --self-contained"
 
 alias PROJ_bachelor="cd ~/Desktop/Projects/Python/SemestralWork"
-alias PROJ_knowledgeboard="cd ~/Desktop/Projects/knowledgeboard/knowledgeboard.github.io"
+alias PROJ_knowledgeboard="cd ~/Desktop/Projects/knowledgeboard.github.io"
 alias knowledgeboard="chromium knowledgeboard.github.io"
 alias knowledgeboard_blog="PROJ_knowledgeboard && nvim templates/blog.md && cd -"
 alias knowledgeboard_publish="PROJ_knowledgeboard && make git && cd -"
 alias school="cd ~/Desktop/MFF-Stuff/NMGR/ZS4/"
+
+bindkey -s ^f "tmux-sessionizer\n"
+bindkey -s ^a0 "tmux a -t BLOG\n"
 
 mcscomplie () { mcs -recurse:'*.cs' -out:$1 ; } 

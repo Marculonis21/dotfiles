@@ -39,6 +39,7 @@ floating_modifier $mod
 for_window [class="Pathtracer test"] floating enable, move position center
 for_window [class ="SFML*"] floating enable, move position center
 for_window [class ="mujoco"] floating enable, move position center
+for_window [class ="GLFW*"] floating enable, move position center
 
 # #---Gaps---# #
 for_window [class="^.*"] border pixel $border_pixels
@@ -54,7 +55,7 @@ gaps outer $outer_gaps
 bindsym $mod+Return 		      exec $term
 bindsym $mod+Shift+Return	      exec $term --working-directory  $(xcwd)
 
-bindsym $mod+Shift+Escape	      exec $hibernate
+# bindsym $mod+Shift+Escape	      exec $hibernate
 
 # space
 # bindsym $mod+space 			  exec --no-startup-id rofi-menu 
@@ -64,7 +65,7 @@ bindsym $mod+q			          [con_id="__focused__" instance="^(?!dropdown_).*$"] k
 bindsym $mod+Shift+q		      [con_id="__focused__" instance="^(?!dropdown_).*$"] exec --no-startup-id kill -9 `xdotool getwindowfocus getwindowpid`
 
 # s suspend
-bindsym $mod+Shift+s	          exec $suspend_lock
+bindsym $mod+Shift+s	          exec $lock
 
 # c
 # bindsym $mod+c 			      exec --no-startup-id lock

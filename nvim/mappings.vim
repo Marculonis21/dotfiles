@@ -66,7 +66,9 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 nmap <leader>ca  <Plug>(coc-codeaction)
+nmap <leader>cl  <Plug>(coc-codelens-action)
 nmap <leader>qf  <Plug>(coc-fix-current)
+" nnoremap <leader>gh <Plug>CocCommand clangd.switchSourceHeader
 
 " Telescope
 nnoremap <leader>ff <cmd>Telescope find_files<cr>

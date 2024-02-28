@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+BLOG_SESSION="BLOG"
+
+if ! tmux has-session -t=$BLOG_SESSION 2> /dev/null; then
+    tmux new -d -s $BLOG_SESSION nvim ~/Desktop/Projects/knowledgeboard.github.io/templates/blog.md
+fi

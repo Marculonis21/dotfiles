@@ -1,0 +1,6 @@
+#!/bin/bash
+
+PATH="/home/marculonis/Desktop/Projects/Python/small-python/codeRain/matrix_anim.py"
+
+/usr/bin/python3 "$PATH"
+

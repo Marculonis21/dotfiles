@@ -23,7 +23,6 @@ alias knowledgeboard_blog="PROJ_knowledgeboard && nvim templates/blog.md && cd -
 alias knowledgeboard_publish="PROJ_knowledgeboard && make git && cd -"
 alias school="cd ~/Desktop/MFF-Stuff/NMGR/ZS4/"
 
-bindkey -s ^f "tmux-sessionizer\n"
-bindkey -s ^a0 "tmux a -t BLOG\n"
+source ~/.config/zsh/tmux.zsh
 
 mcscomplie () { mcs -recurse:'*.cs' -out:$1 ; } 

@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+
+import sys
+import pty
+import os
+
+output_bytes = []
+def read(fd):
+    data = os.read(fd, 1024)
+    output_bytes.append(data)
+    return data
+code = pty.spawn(["make"], read)
+if code != 0: sys.exit(1)
+file_name = output_bytes[-1].decode("utf-8").strip().split(" ")[-1]
+print(file_name, file=sys.stdout)
+os.system("./"+file_name)

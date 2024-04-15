@@ -1,0 +1,42 @@
+#!/usr/bin/env python3
+
+import sys
+import os
+from pathlib import Path
+
+assert len(sys.argv) == 2, "Should have 1 path argument"
+
+filepath = Path(sys.argv[1])
+filename = filepath.name
+print(filepath)
+
+if filename.endswith(".py"):
+    os.system(f"python3 {filepath}")
+
+elif filename.endswith(".cpp") or filename.endswith(".hpp") or filename.endswith("glsl"):
+    found = False
+    path = ""
+    rel_path = "../"
+    for i in range(3):
+        path = filepath.parent.joinpath(i*rel_path)
+        files = os.listdir(path)
+        print(i, files, path)
+        found = "build" in files
+
+        if found: break
+
+    if not found:
+        print("Build not found")
+        sys.exit(1)
+
+    path = str(path)
+    path += "/build"
+    print(path)
+
+    os.system(f"tmux if 'tmux has -t :build' 'selectw -t build' 'neww -n build -c {path}' \\; \
+                send ^U ENTER \\; send _tmux-builder-make ENTER")
+else:
+    print("Unknown file extension")
+    sys.exit(1)
+
+sys.exit(0)

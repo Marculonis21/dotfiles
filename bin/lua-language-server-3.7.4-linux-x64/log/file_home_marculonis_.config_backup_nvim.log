@@ -1,0 +1,676 @@
+[17:01:13.933][info] [#0:/home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/main.lua:66]: Lua Lsp startup, root: 	/home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64
+[17:01:13.933][info] [#0:/home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/main.lua:67]: ROOT:	/home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64
+[17:01:13.933][info] [#0:/home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/main.lua:68]: LOGPATH:	/home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/log
+[17:01:13.933][info] [#0:/home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/main.lua:69]: METAPATH:	/home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta
+[17:01:13.934][info] [#0:/home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/main.lua:70]: VERSION:	3.7.4
+[17:01:13.955][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 1.336 MB
+        # 00 : 1.336 MB
+        # 01 : 0.000 MB
+        # 02 : 0.000 MB
+        # 03 : 0.000 MB
+        # 04 : 0.000 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[17:01:13.957][info] [#0:script/client.lua:657]: Client init	{
+  capabilities = {
+    callHierarchy = {
+      dynamicRegistration = false
+    },
+    textDocument = {
+      codeAction = {
+        codeActionLiteralSupport = {
+          codeActionKind = {
+            valueSet = { "", "Empty", "QuickFix", "Refactor", "RefactorExtract", "RefactorInline", "RefactorRewrite", "Source", "SourceOrganizeImports", "quickfix", "refactor", "refactor.extract", "refactor.inline", "refactor.rewrite", "source", "source.organizeImports" }
+          }
+        },
+        dataSupport = true,
+        dynamicRegistration = false,
+        isPreferredSupport = true,
+        resolveSupport = {
+          properties = { "edit" }
+        }
+      },
+      completion = {
+        completionItem = {
+          commitCharactersSupport = true,
+          deprecatedSupport = true,
+          documentationFormat = { "markdown", "plaintext" },
+          insertReplaceSupport = true,
+          insertTextModeSupport = {
+            valueSet = { 1, 2 }
+          },
+          labelDetailsSupport = true,
+          preselectSupport = true,
+          resolveSupport = {
+            properties = { "documentation", "detail", "additionalTextEdits", "sortText", "filterText", "insertText", "textEdit", "insertTextFormat", "insertTextMode" }
+          },
+          snippetSupport = true,
+          tagSupport = {
+            valueSet = { 1 }
+          }
+        },
+        completionItemKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 }
+        },
+        completionList = {
+          itemDefaults = { "commitCharacters", "editRange", "insertTextFormat", "insertTextMode", "data" }
+        },
+        contextSupport = true,
+        dynamicRegistration = false,
+        insertTextMode = 1
+      },
+      declaration = {
+        linkSupport = true
+      },
+      definition = {
+        linkSupport = true
+      },
+      documentHighlight = {
+        dynamicRegistration = false
+      },
+      documentSymbol = {
+        dynamicRegistration = false,
+        hierarchicalDocumentSymbolSupport = true,
+        symbolKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 }
+        }
+      },
+      hover = {
+        contentFormat = { "markdown", "plaintext" },
+        dynamicRegistration = false
+      },
+      implementation = {
+        linkSupport = true
+      },
+      publishDiagnostics = {
+        relatedInformation = true,
+        tagSupport = {
+          valueSet = { 1, 2 }
+        }
+      },
+      references = {
+        dynamicRegistration = false
+      },
+      rename = {
+        dynamicRegistration = false,
+        prepareSupport = true
+      },
+      signatureHelp = {
+        dynamicRegistration = false,
+        signatureInformation = {
+          activeParameterSupport = true,
+          documentationFormat = { "markdown", "plaintext" },
+          parameterInformation = {
+            labelOffsetSupport = true
+          }
+        }
+      },
+      synchronization = {
+        didSave = true,
+        dynamicRegistration = false,
+        willSave = false,
+        willSaveWaitUntil = false
+      },
+      typeDefinition = {
+        linkSupport = true
+      }
+    },
+    window = {
+      showDocument = {
+        support = false
+      },
+      showMessage = {
+        messageActionItem = {
+          additionalPropertiesSupport = false
+        }
+      },
+      workDoneProgress = true
+    },
+    workspace = {
+      applyEdit = true,
+      configuration = true,
+      symbol = {
+        dynamicRegistration = false,
+        hierarchicalWorkspaceSymbolSupport = true,
+        symbolKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 }
+        }
+      },
+      workspaceEdit = {
+        resourceOperations = { "rename", "create", "delete" }
+      },
+      workspaceFolders = true
+    }
+  },
+  clientInfo = {
+    name = "Neovim",
+    version = "0.8.2"
+  },
+  initializationOptions = {},
+  processId = 200335,
+  rootPath = "/home/marculonis/.config/backup_nvim",
+  rootUri = "file:///home/marculonis/.config/backup_nvim",
+  trace = "off",
+  workspaceFolders = { {
+      name = "/home/marculonis/.config/backup_nvim",
+      uri = "file:///home/marculonis/.config/backup_nvim"
+    } }
+}
+[17:01:13.957][info] [#0:script/language.lua:137]: VSC language: nil
+[17:01:13.957][info] [#0:script/language.lua:138]: LS  language: en-us
+[17:01:13.958][info] [#0:script/workspace/workspace.lua:38]: Workspace init root: 	file:///home/marculonis/.config/backup_nvim
+[17:01:13.958][info] [#0:script/workspace/workspace.lua:42]: Log path: 	/home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/log/file_home_marculonis_.config_backup_nvim.log
+[17:01:13.958][info] [#0:script/workspace/workspace.lua:48]: Workspace create: 	file:///home/marculonis/.config/backup_nvim
+[17:01:14.059][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[17:01:14.160][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[17:01:14.160][info] [#0:script/provider/provider.lua:61]: Load config from client	fallback
+[17:01:14.160][info] [#0:script/provider/provider.lua:62]: nil
+[17:01:14.260][info] [#0:script/library.lua:212]: Init builtin library at:	file:///home/marculonis/.config/backup_nvim
+[17:01:14.320][info] [#0:script/plugin.lua:86]: plugin path:	/home/marculonis/.config/backup_nvim
+[17:01:14.320][warn] [#0:script/plugin.lua:101]: plugin not found:	/home/marculonis/.config/backup_nvim
+[17:01:14.320][info] [#0:script/library.lua:212]: Init builtin library at:	nil
+[17:01:14.431][info] [#0:script/workspace/workspace.lua:324]: Preload start:	file:///home/marculonis/.config/backup_nvim
+[17:01:14.439][info] [#0:script/workspace/workspace.lua:330]: Scan files at:	file:///home/marculonis/.config/backup_nvim
+[17:01:14.645][info] [#0:script/workspace/workspace.lua:324]: Preload start:	<fallback>
+[17:01:14.647][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[17:01:14.647][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[17:01:14.647][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/math.lua
+[17:01:14.647][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[17:01:14.647][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[17:01:14.648][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/io.lua
+[17:01:14.648][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/string.lua
+[17:01:14.648][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/package.lua
+[17:01:14.648][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/os.lua
+[17:01:14.648][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/table.lua
+[17:01:14.648][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[17:01:14.749][info] [#0:script/workspace/workspace.lua:379]: Found 11 files at:	<fallback>
+[17:01:14.749][info] [#0:script/workspace/loading.lua:161]: Load files from disk:	<fallback>
+[17:01:14.749][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/table.lua , size = 4.230 KB
+[17:01:14.752][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/table.lua
+[17:01:14.752][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/os.lua , size = 5.600 KB
+[17:01:14.756][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/os.lua
+[17:01:14.756][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/package.lua , size = 2.944 KB
+[17:01:14.757][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/package.lua
+[17:01:14.757][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/string.lua , size = 6.341 KB
+[17:01:14.761][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/string.lua
+[17:01:14.761][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/io.lua , size = 6.364 KB
+[17:01:14.764][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/io.lua
+[17:01:14.764][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/builtin.lua , size = 0.302 KB
+[17:01:14.764][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[17:01:14.765][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/debug.lua , size = 7.637 KB
+[17:01:14.772][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[17:01:14.772][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/math.lua , size = 8.509 KB
+[17:01:14.776][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/math.lua
+[17:01:14.776][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/basic.lua , size = 15.377 KB
+[17:01:14.783][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[17:01:14.783][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/coroutine.lua , size = 2.590 KB
+[17:01:14.784][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[17:01:14.784][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/utf8.lua , size = 2.386 KB
+[17:01:14.786][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[17:01:14.849][info] [#0:script/workspace/loading.lua:173]: Loaded files takes [0.102] sec: <fallback>
+[17:01:14.849][info] [#0:script/workspace/loading.lua:182]: Compile files takes [0.000] sec: <fallback>
+[17:01:14.849][info] [#0:script/workspace/loading.lua:183]: Loaded finish:	<fallback>
+[17:01:14.849][info] [#0:script/workspace/workspace.lua:381]: Preload finish at:	<fallback>
+[17:01:15.236][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[17:01:15.236][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[17:01:15.236][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/math.lua
+[17:01:15.237][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[17:01:15.237][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[17:01:15.237][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/io.lua
+[17:01:15.237][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/string.lua
+[17:01:15.237][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/package.lua
+[17:01:15.237][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/os.lua
+[17:01:15.237][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/table.lua
+[17:01:15.237][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[17:01:15.338][info] [#0:script/workspace/workspace.lua:379]: Found 333 files at:	file:///home/marculonis/.config/backup_nvim
+[17:01:15.338][info] [#0:script/workspace/loading.lua:161]: Load files from disk:	file:///home/marculonis/.config/backup_nvim
+[17:01:15.338][info] [#0:script/workspace/loading.lua:89]: Skip loaded file: file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[17:01:15.338][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[17:01:15.338][info] [#0:script/workspace/loading.lua:89]: Skip loaded file: file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/table.lua
+[17:01:15.338][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/table.lua
+[17:01:15.338][info] [#0:script/workspace/loading.lua:89]: Skip loaded file: file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/os.lua
+[17:01:15.338][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/os.lua
+[17:01:15.338][info] [#0:script/workspace/loading.lua:89]: Skip loaded file: file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/package.lua
+[17:01:15.339][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/package.lua
+[17:01:15.339][info] [#0:script/workspace/loading.lua:89]: Skip loaded file: file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/string.lua
+[17:01:15.339][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/string.lua
+[17:01:15.339][info] [#0:script/workspace/loading.lua:89]: Skip loaded file: file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/io.lua
+[17:01:15.339][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/io.lua
+[17:01:15.339][info] [#0:script/workspace/loading.lua:89]: Skip loaded file: file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[17:01:15.339][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[17:01:15.339][info] [#0:script/workspace/loading.lua:89]: Skip loaded file: file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[17:01:15.339][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[17:01:15.339][info] [#0:script/workspace/loading.lua:89]: Skip loaded file: file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/math.lua
+[17:01:15.339][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/math.lua
+[17:01:15.339][info] [#0:script/workspace/loading.lua:89]: Skip loaded file: file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[17:01:15.339][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[17:01:15.339][info] [#0:script/workspace/loading.lua:89]: Skip loaded file: file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[17:01:15.339][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[17:01:15.340][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-colorizer.lua/test/print-trie.lua , size = 1.282 KB
+[17:01:15.345][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-colorizer.lua/lua/colorizer/nvim.lua , size = 5.747 KB
+[17:01:15.367][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-colorizer.lua/lua/colorizer/trie.lua , size = 5.348 KB
+[17:01:15.376][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/scripts/gendocs.lua , size = 1.306 KB
+[17:01:15.377][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-colorizer.lua/lua/colorizer.lua , size = 20.148 KB
+[17:01:15.403][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/tests/pickers/find_files__readme.lua , size = 0.216 KB
+[17:01:15.404][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/tests/pickers/find_files__with_ctrl_n.lua , size = 0.257 KB
+[17:01:15.404][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/tests/pickers/find_files__scrolling_descending_cycle.lua , size = 0.411 KB
+[17:01:15.404][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/tests/helpers.lua , size = 1.979 KB
+[17:01:15.406][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/tests/automated/telescope_spec.lua , size = 7.705 KB
+[17:01:15.409][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/tests/automated/action_spec.lua , size = 9.885 KB
+[17:01:15.417][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/tests/automated/pickers/find_files_spec.lua , size = 4.691 KB
+[17:01:15.418][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/tests/automated/pickers/scrolling_spec.lua , size = 0.330 KB
+[17:01:15.418][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/tests/automated/entry_display_spec.lua , size = 1.850 KB
+[17:01:15.419][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/tests/automated/scroller_spec.lua , size = 4.629 KB
+[17:01:15.421][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/tests/automated/linked_list_spec.lua , size = 2.893 KB
+[17:01:15.423][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/tests/automated/command_spec.lua , size = 3.155 KB
+[17:01:15.425][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/tests/automated/entry_manager_spec.lua , size = 5.007 KB
+[17:01:15.427][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/tests/automated/resolver_spec.lua , size = 7.110 KB
+[17:01:15.431][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/tests/automated/layout_strategies_spec.lua , size = 3.968 KB
+[17:01:15.433][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/log.lua , size = 0.078 KB
+[17:01:15.433][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/make_entry.lua , size = 33.393 KB
+[17:01:15.448][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/builtin/__diagnostics.lua , size = 4.293 KB
+[17:01:15.461][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/builtin/init.lua , size = 29.466 KB
+[17:01:15.472][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/builtin/__files.lua , size = 15.292 KB
+[17:01:15.479][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/builtin/__git.lua , size = 12.624 KB
+[17:01:15.485][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/builtin/__lsp.lua , size = 11.596 KB
+[17:01:15.490][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/builtin/__internal.lua , size = 40.015 KB
+[17:01:15.509][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/pickers/_test_helpers.lua , size = 1.629 KB
+[17:01:15.510][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/sorters.lua , size = 16.001 KB
+[17:01:15.518][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/pickers/entry_display.lua , size = 5.557 KB
+[17:01:15.520][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/pickers/scroller.lua , size = 2.926 KB
+[17:01:15.522][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/pickers/window.lua , size = 1.193 KB
+[17:01:15.522][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/pickers/multi.lua , size = 0.960 KB
+[17:01:15.523][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/pickers/_test.lua , size = 4.945 KB
+[17:01:15.526][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/pickers/highlights.lua , size = 3.708 KB
+[17:01:15.528][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/pickers/layout_strategies.lua , size = 36.545 KB
+[17:01:15.552][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/init.lua , size = 7.560 KB
+[17:01:15.554][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/utils.lua , size = 14.178 KB
+[17:01:15.563][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/finders.lua , size = 5.045 KB
+[17:01:15.566][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/health.lua , size = 3.375 KB
+[17:01:15.568][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/debounce.lua , size = 4.741 KB
+[17:01:15.570][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/from_entry.lua , size = 0.984 KB
+[17:01:15.571][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/pickers.lua , size = 50.758 KB
+[17:01:15.595][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/_extensions/init.lua , size = 2.229 KB
+[17:01:15.596][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/previewers/utils.lua , size = 5.641 KB
+[17:01:15.599][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/previewers/init.lua , size = 15.010 KB
+[17:01:15.602][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/previewers/term_previewer.lua , size = 8.371 KB
+[17:01:15.607][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/previewers/previewer.lua , size = 2.095 KB
+[17:01:15.608][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/previewers/buffer_previewer.lua , size = 33.434 KB
+[17:01:15.624][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/algos/string_distance.lua , size = 0.910 KB
+[17:01:15.625][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/algos/linked_list.lua , size = 5.003 KB
+[17:01:15.628][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/algos/fzy.lua , size = 4.909 KB
+[17:01:15.631][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/mappings.lua , size = 9.848 KB
+[17:01:15.634][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/command.lua , size = 6.771 KB
+[17:01:15.637][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/actions/history.lua , size = 6.209 KB
+[17:01:15.641][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/actions/utils.lua , size = 5.110 KB
+[17:01:15.643][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/actions/mt.lua , size = 5.731 KB
+[17:01:15.646][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/actions/layout.lua , size = 6.077 KB
+[17:01:15.648][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/actions/init.lua , size = 45.668 KB
+[17:01:15.687][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/actions/state.lua , size = 1.485 KB
+[17:01:15.688][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/actions/generate.lua , size = 4.687 KB
+[17:01:15.690][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/actions/set.lua , size = 7.353 KB
+[17:01:15.693][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/state.lua , size = 0.716 KB
+[17:01:15.693][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/config/resolve.lua , size = 8.322 KB
+[17:01:15.696][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/deprecated.lua , size = 0.320 KB
+[17:01:15.697][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/config.lua , size = 26.385 KB
+[17:01:15.702][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/_.lua , size = 6.608 KB
+[17:01:15.706][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/themes.lua , size = 3.684 KB
+[17:01:15.707][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/finders/async_job_finder.lua , size = 1.604 KB
+[17:01:15.708][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/entry_manager.lua , size = 4.259 KB
+[17:01:15.711][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/finders/async_static_finder.lua , size = 0.885 KB
+[17:01:15.711][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/lua/telescope/finders/async_oneshot_finder.lua , size = 2.290 KB
+[17:01:15.712][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/ftplugin/TelescopeResults.lua , size = 0.139 KB
+[17:01:15.713][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/ftplugin/TelescopePrompt.lua , size = 0.344 KB
+[17:01:15.713][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/telescope.nvim/plugin/telescope.lua , size = 6.157 KB
+[17:01:15.715][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/jsx_spec.lua , size = 1.003 KB
+[17:01:15.716][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/rust_spec.lua , size = 4.068 KB
+[17:01:15.718][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/javascript_spec.lua , size = 3.000 KB
+[17:01:15.720][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/usd_spec.lua , size = 0.527 KB
+[17:01:15.720][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/graphql_spec.lua , size = 0.418 KB
+[17:01:15.721][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/java_spec.lua , size = 1.753 KB
+[17:01:15.722][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/common.lua , size = 6.385 KB
+[17:01:15.726][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/wgsl_spec.lua , size = 0.412 KB
+[17:01:15.726][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/ruby_spec.lua , size = 0.774 KB
+[17:01:15.727][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/yuck_spec.lua , size = 0.500 KB
+[17:01:15.727][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/smali_spec.lua , size = 1.003 KB
+[17:01:15.728][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/capnp_spec.lua , size = 1.145 KB
+[17:01:15.729][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/swift_spec.lua , size = 0.937 KB
+[17:01:15.729][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/zig_spec.lua , size = 0.561 KB
+[17:01:15.730][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/query_spec.lua , size = 0.960 KB
+[17:01:15.731][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/yaml_spec.lua , size = 0.576 KB
+[17:01:15.731][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/t32_spec.lua , size = 3.692 KB
+[17:01:15.733][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/python_spec.lua , size = 6.122 KB
+[17:01:15.736][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/julia_spec.lua , size = 0.375 KB
+[17:01:15.737][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/r_spec.lua , size = 1.690 KB
+[17:01:15.738][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/vue_spec.lua , size = 0.573 KB
+[17:01:15.738][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/terraform_spec.lua , size = 1.896 KB
+[17:01:15.739][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/go_spec.lua , size = 0.769 KB
+[17:01:15.740][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/tiger_spec.lua , size = 5.885 KB
+[17:01:15.742][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/sql_spec.lua , size = 0.410 KB
+[17:01:15.743][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/algorithm_spec.lua , size = 0.782 KB
+[17:01:15.743][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/nickel_spec.lua , size = 0.977 KB
+[17:01:15.744][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/c_spec.lua , size = 3.652 KB
+[17:01:15.746][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/ql_spec.lua , size = 0.562 KB
+[17:01:15.747][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/meson_spec.lua , size = 1.041 KB
+[17:01:15.748][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/lua/table.lua , size = 0.094 KB
+[17:01:15.748][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/lua/loop.lua , size = 0.116 KB
+[17:01:15.748][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/lua/cond.lua , size = 0.124 KB
+[17:01:15.748][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/lua/no-indent-after-paren-pairs.lua , size = 0.063 KB
+[17:01:15.750][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/lua/string.lua , size = 0.040 KB
+[17:01:15.750][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/lua/func.lua , size = 0.111 KB
+[17:01:15.751][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/lua/nested-table.lua , size = 0.043 KB
+[17:01:15.751][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/lua/method_index_expr.lua , size = 0.031 KB
+[17:01:15.751][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/lua/comment.lua , size = 0.049 KB
+[17:01:15.751][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/gleam_spec.lua , size = 7.648 KB
+[17:01:15.755][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/yang_spec.lua , size = 0.704 KB
+[17:01:15.756][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/html_spec.lua , size = 1.429 KB
+[17:01:15.757][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/gdscript_spec.lua , size = 0.460 KB
+[17:01:15.757][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/css_spec.lua , size = 0.600 KB
+[17:01:15.758][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/dart_spec.lua , size = 1.759 KB
+[17:01:15.759][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/php_spec.lua , size = 0.926 KB
+[17:01:15.759][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/lua_spec.lua , size = 2.502 KB
+[17:01:15.761][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/indent/cpp_spec.lua , size = 2.422 KB
+[17:01:15.763][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/query/injection_spec.lua , size = 2.521 KB
+[17:01:15.764][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/query/highlights/lua/test.lua , size = 0.361 KB
+[17:01:15.764][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/query/highlights_spec.lua , size = 3.484 KB
+[17:01:15.766][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/tests/unit/ts_utils_spec.lua , size = 2.771 KB
+[17:01:15.768][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/scripts/minimal_init.lua , size = 0.528 KB
+[17:01:15.769][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/scripts/check-queries.lua , size = 3.583 KB
+[17:01:15.771][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/scripts/update-readme.lua , size = 1.601 KB
+[17:01:15.772][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/scripts/write-lockfile.lua , size = 0.407 KB
+[17:01:15.773][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/scripts/format-queries.lua , size = 11.876 KB
+[17:01:15.777][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/xml.so , size = 57.891 KB
+[17:01:15.778][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/help.so , size = 144.133 KB
+[17:01:15.781][info] [#0:script/workspace/loading.lua:89]: Skip loaded file: file:///home/marculonis/.config/backup_nvim/lua/init.lua
+[17:01:15.883][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/bash.so , size = 1326.328 KB
+[17:01:15.909][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/javascript.so , size = 337.594 KB
+[17:01:15.916][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/rst.so , size = 66.781 KB
+[17:01:15.918][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/vim.so , size = 990.414 KB
+[17:01:15.932][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/typescript.so , size = 2274.070 KB
+[17:01:15.949][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/markdown.so , size = 350.047 KB
+[17:01:15.951][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/toml.so , size = 36.797 KB
+[17:01:15.951][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/php.so , size = 761.953 KB
+[17:01:15.957][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/c.so , size = 812.492 KB
+[17:01:15.990][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/c_sharp.so , size = 6781.289 KB
+[17:01:16.032][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/ini.so , size = 16.125 KB
+[17:01:16.033][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/cmake.so , size = 93.008 KB
+[17:01:16.033][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/gitignore.so , size = 24.094 KB
+[17:01:16.033][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/vimdoc.so , size = 144.133 KB
+[17:01:16.034][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/css.so , size = 93.195 KB
+[17:01:16.035][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/python.so , size = 497.602 KB
+[17:01:16.038][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/html.so , size = 29.820 KB
+[17:01:16.038][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/jsonc.so , size = 18.398 KB
+[17:01:16.038][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/glsl.so , size = 984.500 KB
+[17:01:16.046][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/cpp.so , size = 4687.766 KB
+[17:01:16.076][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/yaml.so , size = 195.555 KB
+[17:01:16.078][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/perl.so , size = 1919.508 KB
+[17:01:16.089][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/lua.so , size = 61.344 KB
+[17:01:16.090][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/comment.so , size = 17.398 KB
+[17:01:16.091][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/tmux.so , size = 1568.133 KB
+[17:01:16.100][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/make.so , size = 160.172 KB
+[17:01:16.102][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/latex.so , size = 2320.812 KB
+[17:01:16.117][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/bibtex.so , size = 21.203 KB
+[17:01:16.117][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/json.so , size = 16.133 KB
+[17:01:16.117][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/lua/nvim-treesitter/utils.lua , size = 6.361 KB
+[17:01:16.120][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/lua/nvim-treesitter/statusline.lua , size = 1.386 KB
+[17:01:16.121][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/lua/nvim-treesitter/health.lua , size = 5.878 KB
+[17:01:16.124][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/lua/nvim-treesitter/locals.lua , size = 9.749 KB
+[17:01:16.129][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/lua/nvim-treesitter/caching.lua , size = 1.653 KB
+[17:01:16.130][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/lua/nvim-treesitter/fold.lua , size = 3.760 KB
+[17:01:16.132][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/lua/nvim-treesitter/ts_utils.lua , size = 14.204 KB
+[17:01:16.139][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/lua/nvim-treesitter/compat.lua , size = 0.671 KB
+[17:01:16.139][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/lua/nvim-treesitter/query.lua , size = 12.730 KB
+[17:01:16.145][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/lua/nvim-treesitter/tsrange.lua , size = 3.576 KB
+[17:01:16.148][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/lua/nvim-treesitter/indent.lua , size = 11.684 KB
+[17:01:16.153][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/lua/nvim-treesitter/parsers.lua , size = 53.408 KB
+[17:01:16.170][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/lua/nvim-treesitter/query_predicates.lua , size = 6.113 KB
+[17:01:16.173][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/lua/nvim-treesitter/install.lua , size = 22.439 KB
+[17:01:16.183][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/lua/nvim-treesitter/shell_command_selectors.lua , size = 8.233 KB
+[17:01:16.188][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/lua/nvim-treesitter/highlight.lua , size = 1.210 KB
+[17:01:16.189][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/lua/nvim-treesitter/info.lua , size = 5.092 KB
+[17:01:16.192][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/lua/nvim-treesitter/configs.lua , size = 17.758 KB
+[17:01:16.200][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/lua/nvim-treesitter/incremental_selection.lua , size = 5.261 KB
+[17:01:16.203][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/lua/nvim-treesitter.lua , size = 0.604 KB
+[17:01:16.204][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/plugin/nvim-treesitter.lua , size = 0.733 KB
+[17:01:16.204][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/ale/test/test-files/lua/testfile.lua , size = 0.000 KB
+[17:01:16.204][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/ale/lua/ale/util.lua , size = 0.227 KB
+[17:01:16.205][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/ale/lua/ale/diagnostics.lua , size = 2.247 KB
+[17:01:16.206][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/coc.nvim/doc/coc-example-config.lua , size = 7.744 KB
+[17:01:16.209][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/coc.nvim/.release/doc/coc-example-config.lua , size = 7.744 KB
+[17:01:16.212][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/coc.nvim/.release/lua/coc/highlight.lua , size = 2.349 KB
+[17:01:16.213][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/coc.nvim/lua/coc/highlight.lua , size = 2.349 KB
+[17:01:16.215][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/tests/manual/large_job_spec.lua , size = 0.763 KB
+[17:01:16.216][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/tests/plenary/rotate_spec.lua , size = 0.836 KB
+[17:01:16.216][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/tests/plenary/async_testing_spec.lua , size = 1.904 KB
+[17:01:16.218][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/tests/plenary/async/channel_spec.lua , size = 4.351 KB
+[17:01:16.220][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/tests/plenary/async/test_spec.lua , size = 1.203 KB
+[17:01:16.221][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/tests/plenary/async/util_spec.lua , size = 1.825 KB
+[17:01:16.223][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/tests/plenary/async/condvar_spec.lua , size = 2.514 KB
+[17:01:16.224][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/tests/plenary/async/semaphore_spec.lua , size = 1.319 KB
+[17:01:16.225][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/tests/plenary/async/deque_spec.lua , size = 1.383 KB
+[17:01:16.226][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/tests/plenary/async/async_spec.lua , size = 1.104 KB
+[17:01:16.227][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/tests/plenary/enum_spec.lua , size = 1.729 KB
+[17:01:16.228][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/tests/plenary/json_spec.lua , size = 3.381 KB
+[17:01:16.230][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/tests/plenary/strings_spec.lua , size = 11.450 KB
+[17:01:16.235][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/tests/plenary/iterators_spec.lua , size = 3.832 KB
+[17:01:16.238][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/tests/plenary/context_manager_spec.lua , size = 4.554 KB
+[17:01:16.240][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/tests/plenary/popup_requires_spec.lua , size = 1.299 KB
+[17:01:16.241][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/tests/plenary/filetype_spec.lua , size = 5.496 KB
+[17:01:16.243][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/tests/plenary/path_spec.lua , size = 25.929 KB
+[17:01:16.255][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/tests/plenary/uses_nvim_spec.lua , size = 0.113 KB
+[17:01:16.256][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/tests/plenary/functional_spec.lua , size = 0.632 KB
+[17:01:16.256][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/tests/plenary/job_spec.lua , size = 21.134 KB
+[17:01:16.267][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/tests/plenary/tbl_spec.lua , size = 0.576 KB
+[17:01:16.268][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/tests/plenary/scandir_spec.lua , size = 8.685 KB
+[17:01:16.273][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/tests/plenary/py_list_spec.lua , size = 1.951 KB
+[17:01:16.274][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/tests/plenary/simple_busted_spec.lua , size = 4.219 KB
+[17:01:16.276][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/tests/plenary/curl_spec.lua , size = 6.111 KB
+[17:01:16.279][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/tests/plenary/popup_spec.lua , size = 4.129 KB
+[17:01:16.282][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/tests/plenary/job/validation_spec.lua , size = 0.948 KB
+[17:01:16.282][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/scripts/update_filetypes_from_github.lua , size = 6.680 KB
+[17:01:16.285][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/scripts/vararg/rotate.lua , size = 0.700 KB
+[17:01:16.286][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/data/plenary/filetypes/base.lua , size = 22.987 KB
+[17:01:16.329][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/data/plenary/filetypes/builtin.lua , size = 1.628 KB
+[17:01:16.330][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/say.lua , size = 1.314 KB
+[17:01:16.331][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/luassert/array.lua , size = 2.443 KB
+[17:01:16.332][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/luassert/init.lua , size = 0.498 KB
+[17:01:16.333][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/luassert/mock.lua , size = 1.573 KB
+[17:01:16.333][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/luassert/assert.lua , size = 4.762 KB
+[17:01:16.336][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/luassert/spy.lua , size = 6.927 KB
+[17:01:16.339][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/luassert/languages/en.lua , size = 3.159 KB
+[17:01:16.340][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/luassert/modifiers.lua , size = 0.531 KB
+[17:01:16.340][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/luassert/assertions.lua , size = 14.024 KB
+[17:01:16.347][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/luassert/formatters/init.lua , size = 6.502 KB
+[17:01:16.351][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/luassert/formatters/binarystring.lua , size = 0.760 KB
+[17:01:16.351][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/luassert/stub.lua , size = 2.926 KB
+[17:01:16.353][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/luassert/matchers/init.lua , size = 0.093 KB
+[17:01:16.353][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/luassert/matchers/core.lua , size = 6.277 KB
+[17:01:16.356][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/luassert/matchers/composite.lua , size = 1.782 KB
+[17:01:16.357][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/luassert/state.lua , size = 2.978 KB
+[17:01:16.359][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/luassert/util.lua , size = 11.194 KB
+[17:01:16.364][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/luassert/compatibility.lua , size = 0.291 KB
+[17:01:16.364][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/luassert/namespaces.lua , size = 0.042 KB
+[17:01:16.364][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/luassert/match.lua , size = 1.870 KB
+[17:01:16.366][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/strings.lua , size = 4.998 KB
+[17:01:16.369][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/log.lua , size = 6.741 KB
+[17:01:16.372][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/job.lua , size = 16.072 KB
+[17:01:16.381][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/busted.lua , size = 5.993 KB
+[17:01:16.385][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/curl.lua , size = 8.379 KB
+[17:01:16.389][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/collections/py_list.lua , size = 9.732 KB
+[17:01:16.394][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/init.lua , size = 0.251 KB
+[17:01:16.394][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/async/init.lua , size = 1.373 KB
+[17:01:16.395][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/async/api.lua , size = 0.286 KB
+[17:01:16.396][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/async/structs.lua , size = 2.243 KB
+[17:01:16.397][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/async/async.lua , size = 3.297 KB
+[17:01:16.399][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/async/tests.lua , size = 0.464 KB
+[17:01:16.399][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/async/util.lua , size = 3.223 KB
+[17:01:16.401][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/async/uv_async.lua , size = 1.500 KB
+[17:01:16.402][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/async/lsp.lua , size = 0.366 KB
+[17:01:16.402][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/async/control.lua , size = 4.937 KB
+[17:01:16.405][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/test_harness.lua , size = 6.257 KB
+[17:01:16.408][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/scandir.lua , size = 17.623 KB
+[17:01:16.416][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/functional.lua , size = 1.212 KB
+[17:01:16.417][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/enum.lua , size = 4.297 KB
+[17:01:16.419][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/popup/init.lua , size = 16.081 KB
+[17:01:16.425][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/popup/utils.lua , size = 0.495 KB
+[17:01:16.425][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/run.lua , size = 0.539 KB
+[17:01:16.426][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/neorocks/init.lua , size = 0.099 KB
+[17:01:16.426][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/profile.lua , size = 0.876 KB
+[17:01:16.427][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/operators.lua , size = 2.154 KB
+[17:01:16.428][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/profile/p.lua , size = 9.007 KB
+[17:01:16.432][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/profile/lua_profiler.lua , size = 6.548 KB
+[17:01:16.435][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/profile/memory_profiler.lua , size = 37.303 KB
+[17:01:16.447][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/reload.lua , size = 0.825 KB
+[17:01:16.448][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/vararg/init.lua , size = 0.054 KB
+[17:01:16.448][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/vararg/rotate.lua , size = 2.047 KB
+[17:01:16.449][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/filetype.lua , size = 4.739 KB
+[17:01:16.452][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/path.lua , size = 22.624 KB
+[17:01:16.464][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/json.lua , size = 2.980 KB
+[17:01:16.466][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/class.lua , size = 1.709 KB
+[17:01:16.467][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/benchmark/init.lua , size = 3.443 KB
+[17:01:16.469][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/benchmark/stat.lua , size = 1.585 KB
+[17:01:16.470][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/window/float.lua , size = 6.232 KB
+[17:01:16.473][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/window/border.lua , size = 9.354 KB
+[17:01:16.477][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/window/init.lua , size = 0.316 KB
+[17:01:16.478][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/context_manager.lua , size = 1.446 KB
+[17:01:16.479][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/debug_utils.lua , size = 0.276 KB
+[17:01:16.479][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/iterators.lua , size = 18.103 KB
+[17:01:16.488][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/async_lib/init.lua , size = 1.117 KB
+[17:01:16.489][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/async_lib/api.lua , size = 0.329 KB
+[17:01:16.489][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/async_lib/structs.lua , size = 2.237 KB
+[17:01:16.491][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/async_lib/async.lua , size = 5.573 KB
+[17:01:16.493][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/async_lib/tests.lua , size = 0.262 KB
+[17:01:16.494][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/async_lib/util.lua , size = 7.329 KB
+[17:01:16.498][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/async_lib/uv_async.lua , size = 1.504 KB
+[17:01:16.499][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/async_lib/lsp.lua , size = 0.483 KB
+[17:01:16.499][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/tbl.lua , size = 0.715 KB
+[17:01:16.500][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/lsp/override.lua , size = 0.692 KB
+[17:01:16.501][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/fun.lua , size = 0.376 KB
+[17:01:16.501][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/nvim_meta.lua , size = 0.412 KB
+[17:01:16.502][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/bit.lua , size = 8.881 KB
+[17:01:16.506][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/plenary.nvim/lua/plenary/errors.lua , size = 0.320 KB
+[17:01:16.506][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/vim-illuminate/lua/illuminate.lua , size = 8.863 KB
+[17:01:16.510][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/vim-illuminate/lua/illuminate/textobj.lua , size = 1.034 KB
+[17:01:16.511][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/vim-illuminate/lua/illuminate/providers/treesitter.lua , size = 1.201 KB
+[17:01:16.512][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/vim-illuminate/lua/illuminate/providers/regex.lua , size = 2.028 KB
+[17:01:16.514][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/vim-illuminate/lua/illuminate/providers/lsp.lua , size = 3.351 KB
+[17:01:16.515][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/vim-illuminate/lua/illuminate/engine.lua , size = 8.021 KB
+[17:01:16.519][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/vim-illuminate/lua/illuminate/config.lua , size = 3.331 KB
+[17:01:16.520][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/vim-illuminate/lua/illuminate/util.lua , size = 1.047 KB
+[17:01:16.521][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/vim-illuminate/lua/illuminate/goto.lua , size = 1.809 KB
+[17:01:16.522][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/vim-illuminate/lua/illuminate/highlight.lua , size = 1.732 KB
+[17:01:16.523][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/vim-illuminate/lua/illuminate/reference.lua , size = 2.103 KB
+[17:01:16.525][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/vimtex/lua/vimtex/parser/bib.lua , size = 6.243 KB
+[17:01:16.529][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/undodir/%25home%25marculonis%25.config%25nvim%25lua%25user%25nvim-treesitter.lua , size = 63.546 KB
+[17:01:16.539][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/undodir/%25home%25marculonis%25.config%25nvim%25lua%25init.lua , size = 4.808 KB
+[17:01:16.539][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/undodir/%25home%25marculonis%25.config%25nvim%25lua%25user%25telescope.lua , size = 79.200 KB
+[17:01:16.550][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/lua/user/nvim-treesitter.lua , size = 1.988 KB
+[17:01:16.551][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/lua/user/plug-colorizer.lua , size = 0.524 KB
+[17:01:16.551][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/marculonis/.config/backup_nvim/lua/user/telescope.lua , size = 3.303 KB
+[17:01:16.555][info] [#0:script/workspace/loading.lua:140]: Preload dll at: file:///home/marculonis/.config/backup_nvim/autoload/plugged/nvim-treesitter/parser/cuda.so , size = 5395.773 KB
+[17:01:16.689][info] [#0:script/workspace/loading.lua:173]: Loaded files takes [1.232] sec: file:///home/marculonis/.config/backup_nvim
+[17:01:16.690][info] [#0:script/workspace/loading.lua:182]: Compile files takes [0.000] sec: file:///home/marculonis/.config/backup_nvim
+[17:01:16.690][info] [#0:script/workspace/loading.lua:183]: Loaded finish:	file:///home/marculonis/.config/backup_nvim
+[17:01:16.690][info] [#0:script/workspace/workspace.lua:381]: Preload finish at:	file:///home/marculonis/.config/backup_nvim
+[17:01:16.754][warn] [#0:script/proto/proto.lua:190]: Method [textDocument/didOpen] takes [2.174]sec. {
+  jsonrpc = "2.0",
+  method = "textDocument/didOpen",
+  params = {
+    textDocument = {
+      languageId = "lua",
+      text = '"***"',
+      uri = "file:///home/marculonis/.config/backup_nvim/lua/init.lua",
+      version = 0
+    }
+  }
+}
+[17:01:16.755][info] [#0:script/provider/diagnostic.lua:557]: Diagnostics scope [file:///home/marculonis/.config/backup_nvim], files count:[301]
+[17:01:20.612][error][#0]: script/encoder/utf16.lua:66: invalid UTF-8 code
+stack traceback:
+	[C]: in upvalue '_utf8byte'
+	script/encoder/utf16.lua:66: in upvalue 'utf8byte'
+	script/encoder/utf16.lua:86: in for iterator 'for iterator'
+	script/encoder/utf16.lua:140: in field 'fromutf8'
+	script/encoder/init.lua:21: in function 'encoder.len'
+	script/proto/converter.lua:35: in function <script/proto/converter.lua:25>
+	(...tail calls...)
+	script/proto/converter.lua:141: in function 'proto.converter.packRange'
+	script/provider/diagnostic.lua:113: in upvalue 'buildDiagnostic'
+	script/provider/diagnostic.lua:335: in upvalue 'response'
+	script/core/diagnostics/init.lua:132: in upvalue 'callback'
+	script/core/diagnostics/undefined-global.lua:32: in local 'callback'
+	script/parser/guide.lua:735: in function 'parser.guide.eachSourceType'
+	script/core/diagnostics/undefined-global.lua:24: in function 'core.diagnostics.undefined-global'
+	script/core/diagnostics/init.lua:118: in upvalue 'check'
+	script/core/diagnostics/init.lua:179: in function 'core.diagnostics'
+	[C]: in function 'xpcall'
+	script/provider/diagnostic.lua:334: in function 'provider.diagnostic.doDiagnostic'
+	[C]: in function 'xpcall'
+	script/provider/diagnostic.lua:595: in local 'callback'
+	script/provider/diagnostic.lua:566: in function 'provider.diagnostic.awaitDiagnosticsScope'
+	script/provider/diagnostic.lua:594: in function <script/provider/diagnostic.lua:592>
+[17:01:20.613][error][#0]: script/encoder/utf16.lua:66: invalid UTF-8 code
+stack traceback:
+	[C]: in upvalue '_utf8byte'
+	script/encoder/utf16.lua:66: in upvalue 'utf8byte'
+	script/encoder/utf16.lua:86: in for iterator 'for iterator'
+	script/encoder/utf16.lua:140: in field 'fromutf8'
+	script/encoder/init.lua:21: in function 'encoder.len'
+	script/proto/converter.lua:35: in function <script/proto/converter.lua:25>
+	(...tail calls...)
+	script/proto/converter.lua:140: in function 'proto.converter.packRange'
+	script/provider/diagnostic.lua:113: in upvalue 'buildDiagnostic'
+	script/provider/diagnostic.lua:335: in upvalue 'response'
+	script/core/diagnostics/init.lua:132: in upvalue 'callback'
+	script/core/diagnostics/lowercase-global.lua:57: in local 'callback'
+	script/parser/guide.lua:735: in function 'parser.guide.eachSourceType'
+	script/core/diagnostics/lowercase-global.lua:29: in function 'core.diagnostics.lowercase-global'
+	script/core/diagnostics/init.lua:118: in upvalue 'check'
+	script/core/diagnostics/init.lua:179: in function 'core.diagnostics'
+	[C]: in function 'xpcall'
+	script/provider/diagnostic.lua:334: in function 'provider.diagnostic.doDiagnostic'
+	[C]: in function 'xpcall'
+	script/provider/diagnostic.lua:595: in local 'callback'
+	script/provider/diagnostic.lua:566: in function 'provider.diagnostic.awaitDiagnosticsScope'
+	script/provider/diagnostic.lua:594: in function <script/provider/diagnostic.lua:592>
+[17:01:20.614][error][#0]: script/encoder/utf16.lua:66: invalid UTF-8 code
+stack traceback:
+	[C]: in upvalue '_utf8byte'
+	script/encoder/utf16.lua:66: in upvalue 'utf8byte'
+	script/encoder/utf16.lua:86: in for iterator 'for iterator'
+	script/encoder/utf16.lua:140: in field 'fromutf8'
+	script/encoder/init.lua:21: in function 'encoder.len'
+	script/proto/converter.lua:35: in function <script/proto/converter.lua:25>
+	(...tail calls...)
+	script/proto/converter.lua:140: in function 'proto.converter.packRange'
+	script/provider/diagnostic.lua:113: in upvalue 'buildDiagnostic'
+	script/provider/diagnostic.lua:335: in upvalue 'response'
+	script/core/diagnostics/init.lua:132: in upvalue 'callback'
+	script/core/diagnostics/lowercase-global.lua:57: in local 'callback'
+	script/parser/guide.lua:735: in function 'parser.guide.eachSourceType'
+	script/core/diagnostics/lowercase-global.lua:29: in function 'core.diagnostics.lowercase-global'
+	script/core/diagnostics/init.lua:118: in upvalue 'check'
+	script/core/diagnostics/init.lua:179: in function 'core.diagnostics'
+	[C]: in function 'xpcall'
+	script/provider/diagnostic.lua:334: in function 'provider.diagnostic.doDiagnostic'
+	[C]: in function 'xpcall'
+	script/provider/diagnostic.lua:595: in local 'callback'
+	script/provider/diagnostic.lua:566: in function 'provider.diagnostic.awaitDiagnosticsScope'
+	script/provider/diagnostic.lua:594: in function <script/provider/diagnostic.lua:592>
+[17:01:20.615][info] [#0:script/provider/diagnostic.lua:574]: Diagnostics scope [file:///home/marculonis/.config/backup_nvim] finished, takes [3.860] sec.
+[17:01:29.742][info] [#0:script/provider/provider.lua:169]: Server shutdown.
+[17:01:29.843][info] [#0:script/provider/provider.lua:162]: Server exited.

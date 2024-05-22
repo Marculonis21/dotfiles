@@ -8,7 +8,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id autotiling
 exec_always --no-startup-id feh --bg-fill $(shuf -n 1 -e ~/Pictures/Wallpapers/Horizontal/*) --bg-fill $(shuf -n 1 -e ~/Pictures/Wallpapers/Vertical/*) 
 
-exec_always --no-startup-id setxkbmap -layout cz,us -option grp:alt_shift_toggle
+exec_always --no-startup-id setxkbmap -layout us,cz -option grp:alt_shift_toggle
 exec_always --no-startup-id i3-battery-popup -n -D -L 30 
 exec_always --no-startup-id udiskie
 
@@ -40,6 +40,9 @@ for_window [class="Pathtracer test"] floating enable, move position center
 for_window [class ="SFML*"] floating enable, move position center
 for_window [class ="mujoco"] floating enable, move position center
 for_window [class ="GLFW*"] floating enable, move position center
+for_window [class ="*_f"] floating enable, move position center
+# cern 
+for_window [class ="PSC*"] floating enable, move position center 
 
 # #---Gaps---# #
 for_window [class="^.*"] border pixel $border_pixels
@@ -173,11 +176,13 @@ bindcode 233 exec --no-startup-id sudo brightnessctl set +5%
 
 # Multiple screens
 bindcode $mod+75 exec --no-startup-id $HOME/.screenlayout/default.sh
-bindcode $mod+76 exec --no-startup-id $HOME/.screenlayout/hh.sh
+# bindcode $mod+76 exec --no-startup-id $HOME/.screenlayout/hh.sh
+bindcode $mod+76 exec --no-startup-id $HOME/.screenlayout/cernDesktop.sh
 
 # Assign Workspaces:
 for_window [class="Chromium"]   move to workspace $ws10
 for_window [class="Spotify"]    move to workspace $ws9
+for_window [class="Telegram*"]  move to workspace $ws8
 
 # Assing autofloat
 for_window [title=".*Emulator.*"] floating enable

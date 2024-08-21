@@ -35,6 +35,11 @@ elif filename.endswith(".cpp") or filename.endswith(".hpp") or filename.endswith
 
     os.system(f"tmux if 'tmux has -t :build' 'selectw -t build' 'neww -n build -c {path}' \\; \
                 send ^U ENTER \\; send _tmux-builder-make ENTER")
+
+elif filename.endswith(".lua"):
+    os.system(f"tmux if 'tmux has -t :build' 'selectw -t build' 'neww -n build -c {filepath.parent}' \\; \
+                send ^U ENTER; send lua {filepath} ENTER")
+
 else:
     print("Unknown file extension")
     sys.exit(1)

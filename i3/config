@@ -27,9 +27,11 @@ set $mod Mod4
 set $alt Mod1
 set $shutdown shutdown -h now
 set $reboot reboot
-set $lock --no-startup-id i3lock -i ~/Pictures/Wallpapers/Horizontal/liftoff2.png
+# set $lock --no-startup-id i3lock -i ~/Pictures/Wallpapers/Horizontal/liftoff2.png
+set $lock --no-startup-id i3lock -i ~/Pictures/Wallpapers/Horizontal/sunsetHorse_smaller_blur.png
 set $suspend --no-startup-id systemctl suspend
-set $suspend_lock --no-startup-id systemctl suspend && i3lock -i ~/Pictures/Wallpapers/Horizontal/liftoff2.png
+# set $suspend_lock --no-startup-id systemctl suspend && i3lock -i ~/Pictures/Wallpapers/Horizontal/liftoff2.png
+set $suspend_lock --no-startup-id systemctl suspend && i3lock -i ~/Pictures/Wallpapers/Horizontal/sunsetHorse_smaller_blur.png
 set $hibernate sudo systemctl hibernate
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -200,6 +202,17 @@ bindsym $mod+9		workspace $ws9
 bindsym $mod+0		workspace $ws10
 
 # assign workspace for monitors
+# workspace 1 output eDP-1-1
+# workspace 2 output eDP-1-1
+# workspace 3 output eDP-1-1
+# workspace 4 output eDP-1-1
+# workspace 5 output eDP-1-1
+# workspace 6 output eDP-1-1
+# workspace 7 output eDP-1-1
+# workspace 8 output eDP-1-1
+# workspace 9 output eDP-1-1
+# workspace 10 output DP-0
+
 workspace 1 output eDP-1-1
 workspace 2 output eDP-1-1
 workspace 3 output eDP-1-1
@@ -209,7 +222,7 @@ workspace 6 output eDP-1-1
 workspace 7 output eDP-1-1
 workspace 8 output eDP-1-1
 workspace 9 output eDP-1-1
-workspace 10 output DP-0
+workspace 10 output HDMI-0
 
 # move focused container to workspace
 bindsym $mod+Shift+1	move container to workspace $ws1

@@ -178,8 +178,9 @@ bindcode 233 exec --no-startup-id sudo brightnessctl set +5%
 
 # Multiple screens
 bindcode $mod+75 exec --no-startup-id $HOME/.screenlayout/default.sh
+bindcode $mod+76 exec --no-startup-id $HOME/.screenlayout/dorm2.sh
 # bindcode $mod+76 exec --no-startup-id $HOME/.screenlayout/hh.sh
-bindcode $mod+76 exec --no-startup-id $HOME/.screenlayout/cernDesktop.sh
+# bindcode $mod+76 exec --no-startup-id $HOME/.screenlayout/cernDesktop.sh
 
 # Assign Workspaces:
 for_window [class="Chromium"]   move to workspace $ws10

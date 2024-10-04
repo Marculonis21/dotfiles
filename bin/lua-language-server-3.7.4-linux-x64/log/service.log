@@ -1,9 +1,9 @@
-[11:53:16.906][info] [#0:/home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/main.lua:66]: Lua Lsp startup, root: 	/home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64
-[11:53:16.906][info] [#0:/home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/main.lua:67]: ROOT:	/home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64
-[11:53:16.906][info] [#0:/home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/main.lua:68]: LOGPATH:	/home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/log
-[11:53:16.906][info] [#0:/home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/main.lua:69]: METAPATH:	/home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta
-[11:53:16.906][info] [#0:/home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/main.lua:70]: VERSION:	3.7.4
-[11:53:16.926][info] [#0:script/service/service.lua:144]: 
+[23:20:58.865][info] [#0:/home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/main.lua:66]: Lua Lsp startup, root: 	/home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64
+[23:20:58.865][info] [#0:/home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/main.lua:67]: ROOT:	/home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64
+[23:20:58.865][info] [#0:/home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/main.lua:68]: LOGPATH:	/home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/log
+[23:20:58.865][info] [#0:/home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/main.lua:69]: METAPATH:	/home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/meta
+[23:20:58.866][info] [#0:/home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/main.lua:70]: VERSION:	3.7.4
+[23:20:58.887][info] [#0:script/service/service.lua:144]: 
 ========= Medical Examination Report =========
     --------------- Memory ---------------
         Total: 1.336 MB
@@ -25,7 +25,7 @@
         Holdon:   0
         Waiting:  0
 ==============================================
-[11:53:16.929][info] [#0:script/client.lua:657]: Client init	{
+[23:20:58.891][info] [#0:script/client.lua:657]: Client init	{
   capabilities = {
     general = {
       positionEncodings = { "utf-16" }
@@ -209,7 +209,7 @@
     version = "0.10.0-dev+v0.10.0"
   },
   initializationOptions = {},
-  processId = 31936,
+  processId = 10998,
   rootPath = "/home/marculonis/.config/nvim",
   rootUri = "file:///home/marculonis/.config/nvim",
   trace = "off",
@@ -219,7 +219,7 @@
       uri = "file:///home/marculonis/.config/nvim"
     } }
 }
-[11:53:16.929][info] [#0:script/language.lua:137]: VSC language: nil
-[11:53:16.929][info] [#0:script/language.lua:138]: LS  language: en-us
-[11:53:16.929][info] [#0:script/workspace/workspace.lua:38]: Workspace init root: 	file:///home/marculonis/.config/nvim
-[11:53:16.929][info] [#0:script/workspace/workspace.lua:42]: Log path: 	/home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/log/file_home_marculonis_.config_nvim.log
+[23:20:58.891][info] [#0:script/language.lua:137]: VSC language: nil
+[23:20:58.891][info] [#0:script/language.lua:138]: LS  language: en-us
+[23:20:58.891][info] [#0:script/workspace/workspace.lua:38]: Workspace init root: 	file:///home/marculonis/.config/nvim
+[23:20:58.891][info] [#0:script/workspace/workspace.lua:42]: Log path: 	/home/marculonis/.config/bin/lua-language-server-3.7.4-linux-x64/log/file_home_marculonis_.config_nvim.log

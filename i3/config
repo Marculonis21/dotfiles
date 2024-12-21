@@ -9,8 +9,10 @@ exec_always --no-startup-id autotiling
 exec_always --no-startup-id feh --bg-fill $(shuf -n 1 -e ~/Pictures/Wallpapers/Horizontal/*) --bg-fill $(shuf -n 1 -e ~/Pictures/Wallpapers/Vertical/*) 
 
 exec_always --no-startup-id setxkbmap -layout us,cz -option grp:alt_shift_toggle
-exec_always --no-startup-id i3-battery-popup -n -D -L 30 
+# exec_always --no-startup-id i3-battery-popup -n -D -L 30 
 exec_always --no-startup-id udiskie
+
+exec_always --no-startup-id nvidia-settings --load-config-only
 
 exec --no-startup-id xset s off
 exec --no-startup-id xset -dpms
@@ -179,8 +181,6 @@ bindcode 233 exec --no-startup-id sudo brightnessctl set +5%
 # Multiple screens
 bindcode $mod+75 exec --no-startup-id $HOME/.screenlayout/default.sh
 bindcode $mod+76 exec --no-startup-id $HOME/.screenlayout/dorm2.sh
-# bindcode $mod+76 exec --no-startup-id $HOME/.screenlayout/hh.sh
-# bindcode $mod+76 exec --no-startup-id $HOME/.screenlayout/cernDesktop.sh
 
 # Assign Workspaces:
 for_window [class="Chromium"]   move to workspace $ws10
@@ -203,17 +203,6 @@ bindsym $mod+9		workspace $ws9
 bindsym $mod+0		workspace $ws10
 
 # assign workspace for monitors
-# workspace 1 output eDP-1-1
-# workspace 2 output eDP-1-1
-# workspace 3 output eDP-1-1
-# workspace 4 output eDP-1-1
-# workspace 5 output eDP-1-1
-# workspace 6 output eDP-1-1
-# workspace 7 output eDP-1-1
-# workspace 8 output eDP-1-1
-# workspace 9 output eDP-1-1
-# workspace 10 output DP-0
-
 workspace 1 output eDP-1-1
 workspace 2 output eDP-1-1
 workspace 3 output eDP-1-1
@@ -223,6 +212,7 @@ workspace 6 output eDP-1-1
 workspace 7 output eDP-1-1
 workspace 8 output eDP-1-1
 workspace 9 output eDP-1-1
+# workspace 10 output HDMI-1-0
 workspace 10 output HDMI-0
 
 # move focused container to workspace
@@ -262,8 +252,8 @@ bindsym $mod+Shift+Right    resize grow width 5 px or 5 ppt
 bindsym $mod+Ctrl+Right		move workspace to output left
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% #decrease sound volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% #decrease sound volume
 bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
 
 # Window borders        border  backgr. text    indicat.  child_border

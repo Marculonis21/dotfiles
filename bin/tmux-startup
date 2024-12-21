@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
 
 BLOG_SESSION="BLOG"
-CERN_SESSION="CERN"
+# CERN_SESSION="CERN"
+AOC_SESSION="AOC24"
 
 if ! tmux has-session -t=$BLOG_SESSION 2> /dev/null; then
     tmux new -d -s $BLOG_SESSION nvim ~/Desktop/Projects/knowledgeboard.github.io/templates/blog.md
 fi
 
-if ! tmux has-session -t=$CERN_SESSION 2> /dev/null; then
-    tmux new -d -s $CERN_SESSION -c ~/Desktop/mySocial/CERN
+if ! tmux has-session -t=$AOC_SESSION 2> /dev/null; then
+    tmux new -d -s $AOC_SESSION -c ~/Desktop/Projects/some_Rust_fun/advent/aoc24
 fi

@@ -186,6 +186,7 @@ bindcode $mod+76 exec --no-startup-id $HOME/.screenlayout/dorm2.sh
 for_window [class="Chromium"]   move to workspace $ws10
 for_window [class="Spotify"]    move to workspace $ws9
 for_window [class="Telegram*"]  move to workspace $ws8
+for_window [class="discord"]   move to workspace $ws8
 
 # Assing autofloat
 for_window [title=".*Emulator.*"] floating enable
